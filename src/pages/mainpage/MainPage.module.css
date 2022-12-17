@@ -1,0 +1,9 @@
+.usersContainer {
+	display: flex;
+	flex-direction: column;
+}
+
+.buttonAdd {
+	width: 100px;
+	margin-left: 79%;
+}

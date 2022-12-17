@@ -1,0 +1,49 @@
+{
+  "users": [
+      {
+        "id": 1,
+        "nome": "Marcelo Silva",
+        "idade": "22",
+        "estado_civil": "Solteiro",
+        "cpf": "21873282372",
+        "cidade": "São Paulo",
+        "estado": "SP"
+      },
+      {
+        "id": 2,
+        "nome": "Alvaro Dias",
+        "idade": "50",
+        "estado_civil": "Casado",
+        "cpf": "12434738445",
+        "cidade": "Rio de Janeiro",
+        "estado": "RJ"
+      },
+      {
+        "id": 3,
+        "nome": "Natália Clemente",
+        "idade": "32",
+        "estado_civil": "Casado",
+        "cpf": "92637291353",
+        "cidade": "Macaé",
+        "estado": "RJ"
+      },
+      {
+        "id": 4,
+        "nome": "Letícia Lima",
+        "idade": "40",
+        "estado_civil": "Solteiro",
+        "cpf": "37282638001",
+        "cidade": "Belo Horizonte",
+        "estado": "MG"
+      },
+      {
+        "id": 5,
+        "nome": "Daniela Martins",
+        "idade": "26",
+        "estado_civil": "Solteiro",
+        "cpf": "23492738102",
+        "cidade": "Duque de Caxias",
+        "estado": "RJ"
+      }
+  ]
+}

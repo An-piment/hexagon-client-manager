@@ -1,0 +1,60 @@
+.infoInput {
+	width: 200px;
+}
+
+.civilStateInput {
+	width: 200px;
+	height: 30px;
+}
+
+.ageInput {
+	width: 200px;
+}
+
+.editBox {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	width: 30vw;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;	
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 20px;
+	padding: 20px;
+	margin-top: 100px;
+}
+
+.nameCPF {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.ageCivilState {
+	display: flex;
+	justify-content: space-between;
+	gap: 100px;
+}
+
+.stateInput {
+	width: 100px;
+}
+
+.stateCity {
+	display: flex;
+	justify-content: space-between;
+	margin-right: 40px;
+}
+
+.editUserTitle {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.buttonArea {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+	gap: 30px;
+}
