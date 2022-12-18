@@ -104,5 +104,5 @@ Primeiro, a createPagination chama a função setMaxPages passando como parâmet
 
   <details>
     <summary>3.6. Adição de usuários</summary><br/>
-			A página de adição utiliza os mesmos métodos da de edição, pois foi utilizado o mesmo componente. Porém existem algumas mudanças. Como não há informações prévias de usuário, os estados são carregados como uma string vazia sendo alterados à medida que o usuário preenche os campos. A mensagem de confirmação é alterada para se realmente deseja adicionar um usuário e na confirmação é chamada a função addUser para adicionar na API.
+			A página de adição utiliza os mesmos métodos da de edição, pois o mesmo componente foi utilizado. Contudo, existem algumas alterações. Como não há informações prévias de usuário, os estados são carregados como uma string vazia sendo alterados à medida que o usuário preenche os campos. A mensagem de confirmação é alterada para perguntar se realmente deseja adicionar um usuário. Caso a confirmação seja positiva a função addUser é chamada para adicionar o usuário na API.
 		</details>
