@@ -69,15 +69,15 @@ E no segundo terminal:
 
   <details>
     <summary>3.2. Funções de alerta</summary><br/>
-		Para ajudar visualmente o usuário da aplicação, existem dois tipos de função que irão mostrar na tela uma mensagem que se encontram em src/functions/alert.js. A alertMessage(message, action) recebe uma mensagem para mostrar ao usuário e uma action, deletar, adicionar, atualizar. Este alerta também mostra duas opções de confirmar ou cancelar, caso o usuário confirme é retornada a mensagem de 'success', caso contrário, 'cancel'.<br/>
-		A segunda função é a formError(), usado para exibir uma mensagem de erro caso o usuário esqueça de preencher algum campo quando tiver adicionando ou editando um usuário.
+		Para ajudar visualmente o usuário da aplicação, existem dois tipos de função que irão mostrar na tela uma mensagem que se encontram em src/functions/alert.js. A alertMessage(message, action) recebe uma mensagem para mostrar ao usuário e uma action, deletar, adicionar, atualizar. Este alerta também mostra duas opções de confirmar ou cancelar. Caso o usuário confirme é retornada a mensagem de 'success', caso contrário, 'cancel'.<br/>
+		A segunda função é a formError() usado para exibir uma mensagem de erro caso o usuário esqueça de preencher algum campo quando estiver adicionando ou editando um usuário.
   </details>
 
   <details>
     <summary>3.3. Paginação</summary><br/>
 		A lógica de como é feita a paginação pode ser vista no arquivo src/functions/pagination.js. A principal função é a createPagination. Ela recebe como parâmetros um array com os usuários, a quantidade de usuários a ser mostrado por página, a página atual da paginação em que o usuário se encontra e uma função que é adicionada no onClick de cada botão de paginação.<br/>
-		Primeiro essa função chama a setMaxPages que passando os parâmetros array de usuários e usuários por página, calcula quantas páginas devem existir. Dividindo o tamanho do array pelo número de usuários pos página e, com este resultado, fazendo um Math.ceil, conseguimos este valor. Por exemplo: caso o número de usuários por página seja 5, e eu tenha 6 usuários, o Math.ceil irá arredondar o valor para cima retornando 2 páginas.<br/>
-		Após termos este valor, a função createPagination irá verificar se serão exibidas mais de 3 páginas, pois, por padrão a aplicação apenas mostra 3 páginas de paginação, por exemplo (1, 2, 3) ou (3, 4, 5). Caso o usuário esteja na primeira página e só exista uma página, será criado dinamicamente apenas um botão, caso esteja na primeira página e exista 20 páginas, serão criadas 3 botões (1, 2, 3).<br/>
+		Primeiro, essa função chama a setMaxPages que passando os parâmetros array de usuários e usuários por página e calcula quantas páginas devem existir. Dividindo o tamanho do array pelo número de usuários por página e, com este resultado, fazendo um Math.ceil conseguimos este valor. Por exemplo: caso o número de usuários por página seja 5 e existam 6 usuários, o Math.ceil irá arredondar o valor para cima retornando 2 páginas.<br/>
+		Após termos este valor, a função createPagination irá verificar se serão exibidas mais de 3 páginas, pois, por padrão, a aplicação apenas mostra 3 páginas de paginação, por exemplo (1, 2, 3) ou (3, 4, 5). Caso o usuário esteja na primeira página e só exista uma página, será criado dinamicamente apenas um botão, e se por acaso esteja na primeira página e existam 20 páginas, serão criados 3 botões (1, 2, 3).<br/>
 		A função que foi passada como parâmetro será chamada no evento de clique da página escolhida pelo usuário. Esta função irá alterar o estado do componente chamado currentPage e recarregar a função createPagination, porém, dessa vez, passando a nova página atual como parâmetro. Assim, caso esteja na página 2 irão ser mostrados os botões (1, 2, 3), na página 5 (4, 5, 6), e assim por diante.
   </details>
 
@@ -101,3 +101,4 @@ E no segundo terminal:
     <summary>3.6. Adição de usuários</summary><br/>
 			A página de adição utiliza os mesmos métodos da de edição, pois foi utilizado o mesmo componente. Porém existem algumas mudanças. Como não há informações prévias de usuário, os estados são carregados como uma string vazia, sendo alterados a medida que o usuário preenche os campos. A mensagem de confirmação é alterada para se realmente deseja adicionar um usuário e na confirmação é a chamada a função addUser para adicionar na API.
 		</details>
+
