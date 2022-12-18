@@ -82,3 +82,5 @@ Neste repositório foi desenvolvido uma aplicação web onde é possível realiz
     <summary>3.6. Adição de usuários</summary><br/>
 			A página de adição utiliza os mesmos métodos da de edição, pois foi utilizado o mesmo componente. Porém existem algumas mudanças. Como não há informações prévias de usuário, os estados são carregados como uma string vazia, sendo alterados a medida que o usuário preenche os campos. A mensagem de confirmação é alterada para se realmente deseja adicionar um usuário e na confirmação é a chamada a função addUser para adicionar na API.
 		</details>
+
+![image](https://user-images.githubusercontent.com/112974999/208306309-aff43631-893d-4b39-9b40-1cf7b009371b.png)
