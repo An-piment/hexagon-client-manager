@@ -22,7 +22,7 @@ Neste repositório foi desenvolvido uma aplicação web onde é possível realiz
     Para facilitar a leitura e otimização de funções, o código possui uma pasta principal onde se encontram todos os arquivos Javascript chamada <strong>src</strong>. Dentro desta existem os seguintes diretórios:
   
 * <strong>functions</strong> - Dentro desta pasta existem arquivos com as funções usadas em todas as páginas da aplicação, ou seja, funções globais;
-* <strong>component</strong> - Dentro desta pasta temos os componentes que irão ser renderizados em cada página da aplicação feita em React.js;
+* <strong>component</strong> - Dentro desta pasta temos os componentes que serão renderizados em cada página da aplicação feita em React.js;
 * <strong>pages</strong> - Dentro desta pasta temos as páginas da aplicação que renderizam os componentes dependendo do caminho que estamos (/edit, /home, etc)
   </details>
   
@@ -33,8 +33,8 @@ Neste repositório foi desenvolvido uma aplicação web onde é possível realiz
 
   <details>
     <summary>2.3. Ferramentas e frameworks</summary><br/>
-    O framework Bootstrap foi usado para realizar a estilização de todos os botões (confirmação, deletar, etc), campos de input (texto e select) e para a paginação. Para a criação de um site que terá a API contendo os usuários, a ferramenta json server foi necessária. Criando a pasta <strong>db</strong> no diretório principal da aplicação, e, dentro dela, o arquivo db.json, podemos inicializar uma API vazia ou não. No caso desta aplicação, já foi pré criado alguns usuários para facilitar alguns testes.<br/>
-  Para realizar as requisições à API, foi optado o uso do Axios. Com ele é possível realizar a atualização de usuário da API, a remoção e a adição através dos comandos GET, DELETE, PUT e POST. Por fim, para o envio de avisos foi utilizado o SweetAlert2. Com ele é possível criar janelas de confirmação, erros já pré definidas, podendo alterar a mensagem, as opções e o que será feito após seu aviso.
+    O framework Bootstrap foi usado para realizar a estilização de todos os botões (confirmação, deletar, etc), campos de input (texto e select) e para a paginação. Para a criação de um site que terá a API contendo os usuários foi necessário o uso da ferramenta json server. Criando a pasta <strong>db</strong> no diretório principal da aplicação, e, dentro dela, o arquivo db.json, podemos inicializar uma API vazia ou não. No caso desta aplicação, já foi pré criado alguns usuários para facilitar alguns testes.<br/>
+  Para realizar as requisições à API foi optado o uso do Axios. Com ele é possível realizar a atualização de usuário da API, a remoção e a adição através dos comandos GET, DELETE, PUT e POST. Por fim, para o envio de avisos foi utilizado o SweetAlert2. Com ele é possível criar janelas de confirmação, erros já pré definidas, podendo alterar a mensagem, as opções e o que será feito após seu aviso.
   </details>
 
 ## 3. Código e lógica
@@ -64,8 +64,6 @@ Neste repositório foi desenvolvido uma aplicação web onde é possível realiz
 
   <details>
     <summary>3.4. Página inicial</summary><br/>
-![image](https://user-images.githubusercontent.com/112974999/208306128-9c4466f3-961b-48f7-987c-e57228be01e8.png)
-
     Ao iniciarmos a página, o React.js verificará qual o caminho da URL que o usuário se encontra. Como ele está na página principal, irá renderizar a página Home ('/'). Nesta página é chamada a função componentDidMouth() para fazer o carregamento da API através da função getUsers e salvar o resultado no estado users.<br/>
 		Para o filtro de busca, são renderizados 4 inputs com as informações nome, cpf, cidade e usuários por página, e, cada vez que o usuário altera alguns destes campos a função handleChange é chamada e atualiza o estado de cada um dos filtros. Com esta atualização, antes de ser renderizado os usuários, a função filterUsers é chamada, recebendo o array de usuários, e, caso um dos estados de filtro seja diferente de undefined (usuário escreveu algo), é realizado um array.filter para definir o novo array de usuários a ser mostrado.<br/>
 		Após este filtro, o componente UserTable é renderizado, recebendo como props o array de usuários. Este componente renderiza uma lista dinamicamente, dependendo de quantos usuários foram passados. A lista possui as informações de cada usuário e dois botões, Excluir e Editar. O botão excluir recebe a função onClick handleDelete que exibe um mensagem se realmente deseja remover o usuário com as opções sim e cancel, caso confirme a função deleteUser é chamada e o usuário é deletado. O botão edit transfere a página para o link ('/edit/id_do_usuário') para realizar as modificações.<br/>
