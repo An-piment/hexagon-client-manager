@@ -4,7 +4,7 @@
 
 ## Introdução
 
-Neste repositório foi desenvolvido uma aplicação web onde é possível realizar a edição ou o cadastro de novos usuários através do uso de ApiRest. Para melhor explicação de como foi concebido a concepção do código, este relatório será divido dois principais tópicos:
+Neste repositório foi desenvolvido uma aplicação web onde é possível realizar a edição ou o cadastro de novos usuários através do uso de ApiRest. Para melhor explicação de como foi concebido a concepção do código, este relatório será divido três principais tópicos:
 
 * Vídeo demonstrativo do funcionamento da aplicação;
 * Breve descrição das ferramentas e da concepção da aplicação;
