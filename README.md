@@ -8,6 +8,13 @@ Neste repositório foi desenvolvido uma aplicação web onde é possível realiz
 * Breve descrição das ferramentas e da concepção da aplicação;
 * Explicação do código e da lógica envolvida;
 
+## Executando a aplicação
+
+Para instalar as dependências do projeto, utilize o comando:
+
+  ```bash
+    npm install
+  ```
 ## 1. Video
 
 <details>
@@ -42,7 +49,7 @@ Neste repositório foi desenvolvido uma aplicação web onde é possível realiz
   <details>
     <summary>3.1. Funções de dados do usuário</summary><br/>
     De modo a melhorar o uso das funções de recuperar dados de usuários, todas as funções relativas a esta funcionalidade estão no diretório src/functions/userManager.js.
-		Neste arquivos podemos editar a URL de origem da API para que a ferramenta Axios possa trabalhar com os dados. Se quisermos ler os usuários da API, usamos a função getUsers() que chama a função Axios.get e retorna um Array de Objetos com todos os dados dos clientes (nome, email, etc).<br/> 
+		Neste arquivo podemos editar a URL de origem da API para que a ferramenta Axios possa trabalhar com os dados. Se quisermos ler os usuários da API, usamos a função getUsers() que chama a função Axios.get e retorna um Array de Objetos com todos os dados dos clientes (nome, email, etc).<br/> 
 		Para deletarmos um usuários utilizamos a função deleteUser(id). Passando o id do usuário o Axios irá executar a função Axios.delete e remover o usuário da API.<br/>
 		Para atualizar um cliente, usamos a função updateUser(id, data), onde id é o id do cliente que queremos atualizar e data as informações que queremos atualizar, onde esta se encontra em forma de objeto.<br/>
 		Por último, temos a função addUser(data) que recebe um objeto com as informações do usuário a ser adicionado e chama a função Axios.post para adicioná-lo na API.
