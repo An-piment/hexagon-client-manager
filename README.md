@@ -15,6 +15,18 @@ Para instalar as dependências do projeto, utilize o comando:
   ```bash
     npm install
   ```
+
+Para inicializar será necessário dois terminais: um para inicializar o json server e outro para iniciar a aplicação. Para isso, digite no primeiro terminal:
+
+  ```bash
+    npm start
+  ```
+
+E no segundo terminal:
+
+  ```bash
+    npm run backend
+  ```
 ## 1. Video
 
 <details>
