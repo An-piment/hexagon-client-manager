@@ -29,7 +29,7 @@ export const createPagination = (users, userPerPage, currentPage, handlePaginati
 				{extraPages.length < 1 ? <></> 
 					: extraPages.map((_page, index) => (
 					<li 
-						className="page-item" 
+						className="page-item paginationPage" 
 						key={ index }
 						onClick={() => handlePagination(index + 2)}
 					>
@@ -43,7 +43,7 @@ export const createPagination = (users, userPerPage, currentPage, handlePaginati
 			return (
 			<>
 				<li 
-				className="page-item" 
+				className="page-item paginationPage" 
 				onClick={() => handlePagination(1)}
 				>
 					<p className="page-link">{ maxPages - 1}</p>
@@ -57,13 +57,13 @@ export const createPagination = (users, userPerPage, currentPage, handlePaginati
 		return (
 			<>
 				<li
-					className="page-item"
+					className="page-item paginationPage"
 					onClick={() => handlePagination(maxPages - 2)}
 				>
 					<p className="page-link">{ maxPages - 2}</p>
 				</li>
 				<li
-					className="page-item"
+					className="page-item paginationPage"
 					onClick={() => handlePagination(maxPages - 1)}
 				>
 					<p className="page-link">{ maxPages - 1}</p>
@@ -77,7 +77,7 @@ export const createPagination = (users, userPerPage, currentPage, handlePaginati
 	return (
 		<>
 			<li 
-				className="page-item"
+				className="page-item paginationPage"
 				onClick={() => handlePagination(currentPage - 1)}
 			>
 				<p className="page-link">{ currentPage - 1}</p>
@@ -86,7 +86,7 @@ export const createPagination = (users, userPerPage, currentPage, handlePaginati
 				<span className="page-link">{ currentPage }</span>
 			</li>
 			<li 
-				className="page-item"
+				className="page-item paginationPage"
 				onClick={() => handlePagination(currentPage + 1)}
 			>
 				<p className="page-link">{ currentPage + 1}</p>

@@ -51,7 +51,21 @@ export default class Search extends Component {
 							value={ estado }
 							onChange={ handleChange }
 						/>
-					</div>										
+					</div>
+					<div className={ styles.stateInput }>
+							<p>Usuários por página</p>
+							<select 
+								className={ `form-select form-select-sm ${ styles.stateInput }` }
+								onChange={ handleChange }
+								name="usersPerPage"
+							>
+								<option value="5" selected >5</option>
+								<option value="10" >10</option>
+								<option value="20" >20</option>
+								<option value="50" >50</option>
+								<option value="100" >100</option>
+							</select>
+						</div>					
 				</div>		
 			</section>
 		);

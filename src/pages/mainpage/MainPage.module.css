@@ -7,3 +7,9 @@
 	width: 100px;
 	margin-left: 79%;
 }
+
+.paginationBox {
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+}

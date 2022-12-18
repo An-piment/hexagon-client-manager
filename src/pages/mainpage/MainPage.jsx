@@ -14,7 +14,7 @@ export default class MainPage extends Component {
 		cidade: undefined,
 		estado: undefined,
 		currentPage: 1,
-		usersPerPage: 2,
+		usersPerPage: 5,
 	};
 
 	handlePagination = (currentPage) => {
@@ -64,6 +64,7 @@ export default class MainPage extends Component {
 			cpf,
 			cidade,
 			estado,
+			usersPerPage,
 		};
 		const filteredUsers = this.filterUsers(users);
 		const paginationUsers = showUsersOnPage(filteredUsers, usersPerPage, currentPage)
@@ -81,7 +82,7 @@ export default class MainPage extends Component {
 					</button>
 					<UserTable users={ paginationUsers } handleChange={ this.updateUsers }/>
 				</div>
-				<nav aria-label="...">
+				<nav className={ styles.paginationBox }>
 					<ul 
 						className="pagination pagination-lg"
 					>
