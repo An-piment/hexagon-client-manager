@@ -17,9 +17,9 @@ Neste repositório foi desenvolvido uma aplicação web onde é possível realiz
 ## 2. Código e lógica
 
 <details>       
-  <summary>2.1sa. Organização dos arquivos</summary><br/>
+  <summary>2.1. Ferramentas e organiza</summary><br/>
   <details>
-    <summary>2.1. Organização dos arquivos</summary><br/>
+    <summary>2.1.1. Organização dos arquivos</summary><br/>
 
     Para facilitar a leitura e reaproveitamento de funções, o código possui uma pasta principal onde se encontram todos os arquivos Javascript chamada <strong>src</strong>. Dentro desta existem os seguintes diretórios:
 
@@ -29,12 +29,12 @@ Neste repositório foi desenvolvido uma aplicação web onde é possível realiz
   </details>
 
   <details>
-    <summary>2.2. Páginas</summary><br/>
+    <summary>2.1,2. Páginas</summary><br/>
     A aplicação possui duas páginas principais, Main, página principal onde é mostrada ao usuário as informações dos clientes recuperados da API e a página de gerenciamento de usuários, podendo ser tanto para edição ou adição, dependendo do tipo de parâmetro que irá receber.
   </details>
 
   <details>
-    <summary>2.3. Organiza</summary><br/>
+    <summary>2.1.3. Organiza</summary><br/>
     A aplicação possui duas páginas principais, Main, página principal onde é mostrada ao usuário as informações dos clientes recuperados da API e a página de gerenciamento de usuários, podendo ser tanto para edição ou adição, dependendo do tipo de parâmetro que irá receber.
   </details>
 </details>
