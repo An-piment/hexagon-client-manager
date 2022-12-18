@@ -19,21 +19,10 @@ Neste repositório foi desenvolvido uma aplicação web onde é possível realiz
         
 <details>
   <summary>2.1. Organização dos arquivos</summary><br/>
-  Para facilitar a leitura e reaproveitamento de funções, o código possui uma pasta principal onde se encontram todos os arquivos Javascript chamada <strong>src</strong>. Dentro desta existem os seguintes diretórios:
-
-  * <strong>functions</strong> - Dentro desta pasta, existem arquivos com funções usadas em todas as páginas da aplicação, ou seja, funções globais;
-  * <strong>component</strong> - Dentro desta pasta, temos os componentes que irão ser renderizados em cada página da aplicação feita em React.js;
-  * <strong>pages</strong> - Dentro desta pasta, temos as páginas da aplicação que renderizam os componentes dependendo do caminho que estamos (/edit, /home, etc)
   
   Para facilitar a leitura e reaproveitamento de funções, o código possui uma pasta principal onde se encontram todos os arquivos Javascript chamada <strong>src</strong>. Dentro desta existem os seguintes diretórios:
 
   - <strong>functions</strong> - Dentro desta pasta, existem arquivos com funções usadas em todas as páginas da aplicação, ou seja, funções globais;
-  - Pesquisar por uma banda ou artista;
-  - Listar os álbuns disponíveis dessa banda ou artista;
-  - Visualizar as músicas de um álbum selecionado;
-  - Reproduzir uma prévia das músicas deste álbum;
-  - Favoritar e desfavoritar músicas;
-  - Ver a lista de músicas favoritas;
-  - Ver o perfil da pessoa logada;
-  - Editar o perfil da pessoa logada; 
+  - <strong>component</strong> - Dentro desta pasta, temos os componentes que irão ser renderizados em cada página da aplicação feita em React.js;
+  - <strong>pages</strong> - Dentro desta pasta, temos as páginas da aplicação que renderizam os componentes dependendo do caminho que estamos (/edit, /home, etc)
 </details>
