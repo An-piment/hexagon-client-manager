@@ -27,7 +27,7 @@ Neste repositório foi desenvolvido uma aplicação web onde é possível realiz
   
   Para facilitar a leitura e reaproveitamento de funções, o código possui uma pasta principal onde se encontram todos os arquivos Javascript chamada <strong>src</strong>. Dentro desta existem os seguintes diretórios:
 
-  - Fazer login;
+  - <strong>functions</strong> - Dentro desta pasta, existem arquivos com funções usadas em todas as páginas da aplicação, ou seja, funções globais;
   - Pesquisar por uma banda ou artista;
   - Listar os álbuns disponíveis dessa banda ou artista;
   - Visualizar as músicas de um álbum selecionado;
