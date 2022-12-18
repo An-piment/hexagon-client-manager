@@ -77,7 +77,8 @@ E no segundo terminal:
 
   <details>
     <summary>3.3. Paginação</summary><br/>
-		A lógica de como é feita a paginação pode ser vista no arquivo src/functions/pagination.js. A principal função é a createPagination:<br/>
+		A lógica de como é feita a paginação pode ser vista no arquivo src/functions/pagination.js. A principal função é a createPagination:
+
 
 * Recebe como parâmetros um array com os usuários, a quantidade de usuários a ser mostrado por página, a página atual da paginação em que o usuário se encontra e uma função que é adicionada no onClick de cada botão de paginação.<br/>
 
