@@ -16,18 +16,25 @@ Neste repositório foi desenvolvido uma aplicação web onde é possível realiz
 
 ## 2. Código e lógica
 
-        
-<details>
-  <summary>2.1. Organização dos arquivos</summary><br/>
-  
-  Para facilitar a leitura e reaproveitamento de funções, o código possui uma pasta principal onde se encontram todos os arquivos Javascript chamada <strong>src</strong>. Dentro desta existem os seguintes diretórios:
+<details>        
+  <details>
+    <summary>2.1. Organização dos arquivos</summary><br/>
 
-  - <strong>functions</strong> - Dentro desta pasta, existem arquivos com funções usadas em todas as páginas da aplicação, ou seja, funções globais;
-  - <strong>component</strong> - Dentro desta pasta, temos os componentes que irão ser renderizados em cada página da aplicação feita em React.js;
-  - <strong>pages</strong> - Dentro desta pasta, temos as páginas da aplicação que renderizam os componentes dependendo do caminho que estamos (/edit, /home, etc)
+    Para facilitar a leitura e reaproveitamento de funções, o código possui uma pasta principal onde se encontram todos os arquivos Javascript chamada <strong>src</strong>. Dentro desta existem os seguintes diretórios:
+
+    - <strong>functions</strong> - Dentro desta pasta, existem arquivos com funções usadas em todas as páginas da aplicação, ou seja, funções globais;
+    - <strong>component</strong> - Dentro desta pasta, temos os componentes que irão ser renderizados em cada página da aplicação feita em React.js;
+    - <strong>pages</strong> - Dentro desta pasta, temos as páginas da aplicação que renderizam os componentes dependendo do caminho que estamos (/edit, /home, etc)
+  </details>
+
+  <details>
+    <summary>2.2. Páginas</summary><br/>
+    A aplicação possui duas páginas principais, Main, página principal onde é mostrada ao usuário as informações dos clientes recuperados da API e a página de gerenciamento de usuários, podendo ser tanto para edição ou adição, dependendo do tipo de parâmetro que irá receber.
+  </details>
+
+  <details>
+    <summary>2.3. Organiza</summary><br/>
+    A aplicação possui duas páginas principais, Main, página principal onde é mostrada ao usuário as informações dos clientes recuperados da API e a página de gerenciamento de usuários, podendo ser tanto para edição ou adição, dependendo do tipo de parâmetro que irá receber.
+  </details>
 </details>
 
-<details>
-  <summary>2.2. Páginas</summary><br/>
-  A aplicação possui duas páginas principais, Main, página principal onde é mostrada ao usuário as informações dos clientes recuperados da API e a página de gerenciamento de usuários, podendo ser tanto para edição ou adição, dependendo do tipo de parâmetro que irá receber.
-</details>
