@@ -16,7 +16,8 @@ Neste repositório foi desenvolvido uma aplicação web onde é possível realiz
 
 ## 2. Código e lógica
 
-<details>        
+<details>       
+  <summary>2.1sa. Organização dos arquivos</summary><br/>
   <details>
     <summary>2.1. Organização dos arquivos</summary><br/>
 
