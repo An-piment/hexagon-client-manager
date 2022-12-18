@@ -20,11 +20,7 @@ Neste repositório foi desenvolvido uma aplicação web onde é possível realiz
   <summary>2.1. Ferramentas e estrutura</summary><br/>
 
   <details>
-    <summary>2.1.1. Organização dos arquivos</summary><br/>
-
-    Para facilitar a leitura e reaproveitamento de funções, o código possui uma pasta principal onde se encontram todos os arquivos Javascript chamada <strong>src</strong>. Dentro desta existem os seguintes diretórios:
-    
-    
+    <summary>2.1.1. Organização dos arquivos</summary><br/>    
   </details>
   
   <details>
