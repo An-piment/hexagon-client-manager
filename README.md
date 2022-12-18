@@ -7,7 +7,7 @@ Neste repositório foi desenvolvido uma aplicação web onde é possível realiz
 * Vídeo demonstrativo do funcionamento da aplicação;
 * Explicação do código e da lógica envolvida;
 
-[![Watch the video](https://img.youtube.com/vi/T-D1KVIuvjA/maxresdefault.jpg)](https://clipchamp.com/watch/WcTxfhf6NcR)
+[![Assistir o vídeo](https://w7.pngwing.com/pngs/467/458/png-transparent-video-player-play-together-angle-text-photography-thumbnail.png)](https://clipchamp.com/watch/WcTxfhf6NcR)
 
         
 <details>
