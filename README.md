@@ -83,17 +83,17 @@ E no segundo terminal:
 
   <details>
     <summary>3.4. Página inicial</summary><br/>
-    Ao iniciarmos a página, o React.js verificará qual o caminho da URL que o usuário se encontra. Como ele está na página principal, irá renderizar a página Home ('/'). Nesta página é chamada a função componentDidMouth() para fazer o carregamento da API através da função getUsers e salvar o resultado no estado users.<br/>
-		Para o filtro de busca, são renderizados 4 inputs com as informações nome, cpf, cidade e usuários por página, e, cada vez que o usuário altera alguns destes campos a função handleChange é chamada e atualiza o estado de cada um dos filtros. Com esta atualização, antes de ser renderizado os usuários, a função filterUsers é chamada, recebendo o array de usuários, e, caso um dos estados de filtro seja diferente de undefined (usuário escreveu algo), é realizado um array.filter para definir o novo array de usuários a ser mostrado.<br/>
-		Após este filtro, o componente UserTable é renderizado, recebendo como props o array de usuários. Este componente renderiza uma lista dinamicamente, dependendo de quantos usuários foram passados. A lista possui as informações de cada usuário e dois botões, Excluir e Editar. O botão excluir recebe a função onClick handleDelete que exibe um mensagem se realmente deseja remover o usuário com as opções sim e cancel, caso confirme a função deleteUser é chamada e o usuário é deletado. O botão edit transfere a página para o link ('/edit/id_do_usuário') para realizar as modificações.<br/>
-		O botão adicionar que se encontra no canto superior direito da tabela, redireciona a pessoa para o link ('/add') onde é possível adicionar novos usuários.
-		Por último, a paginação é renderizada abaixo da lista (sua explicação pode ser vista no item 3.3)
+    Ao iniciarmos a página o React.js verificará qual o caminho da URL que o usuário se encontra. Como ele está na página principal irá renderizar a página Home ('/'). Nesta página é chamada a função componentDidMouth() para fazer o carregamento da API através da função getUsers e salvar o resultado no estado users.<br/>
+		Para o filtro de busca são renderizados 4 inputs com as informações nome, cpf, cidade e usuários por página, e, cada vez que o usuário altera alguns destes campos a função handleChange é chamada e atualiza o estado de cada um dos filtros. Com esta atualização, antes de ser renderizado os usuários, a função filterUsers é chamada, e recebe o array de usuários, e, caso um dos estados de filtro seja diferente de undefined (usuário escreveu algo), é realizado um array.filter para definir o novo array de usuários a ser mostrado.<br/>
+		Após este filtro o componente UserTable é renderizado, e recebe como props o array de usuários. Este componente renderiza uma lista dinamicamente dependendo de quantos usuários foram passados. A lista possui as informações de cada usuário e dois botões, Excluir e Editar. O botão Excluir recebe a função onClick handleDelete que exibe um mensagem se realmente deseja remover o usuário com as opções sim e cancel. Caso confirme, a função deleteUser é chamada e o usuário é deletado. O botão Edit transfere a página para o link ('/edit/id_do_usuário') para realizar as modificações.<br/>
+		O botão adicionar que se encontra no canto superior direito da tabela redireciona a pessoa para o link ('/add') onde é possível adicionar novos usuários.
+		Por último, a paginação é renderizada abaixo da lista (sua explicação pode ser vista no item 3.3).
 		</details>
 
   <details>
     <summary>3.5. Edição de usuários</summary><br/>
-			Ao clicar no botão editar de um usuário, a aplicação é redirecionada para a página ('/dit/id_do_usuario'). Nesta página temos todos os campos de informação já preenchidos através do componentDidMount() que chama a função de getUsers e find neste array para achar o usuário com o id necessário e alterar o estado da aplicação com as informações recebidas. Ao preencher qualquer input, a função handleChange é chamada, a qual altera o estado da aaplicação.<br/>
-			Caso a pessoa clique em Salvar, a função alertMessage irá ser chamada mostrando um aviso com as opções de prosseguir ou não. Caso prossiga, a função retorna 'success' e a função updateUser é chamada atualizando os dados e redirecionando a aplicação para a página home.<br/>
+			Ao clicar no botão Editar de um usuário a aplicação é redirecionada para a página ('/dit/id_do_usuario'). Nesta página, temos todos os campos de informação já preenchidos através do componentDidMount() que chama a função de getUsers e find neste array para achar o usuário com o id necessário e alterar o estado da aplicação com as informações recebidas. Ao preencher qualquer input a função handleChange é chamada, e altera o estado da aplicação.<br/>
+			Caso a pessoa clique em Salvar, a função alertMessage será chamada mostrando um aviso com as opções de prosseguir ou não. Caso prossiga, a função retorna 'success' e a função updateUser é chamada atualizando os dados e redirecionando a aplicação para a página home.<br/>
 			Caso a pessoa esqueça de preencher qualquer campo, a função formError é chamada exibindo uma mensagem de erro alertando que todos os campos precisam ser preenchidos.
 		</details>
 
@@ -101,4 +101,3 @@ E no segundo terminal:
     <summary>3.6. Adição de usuários</summary><br/>
 			A página de adição utiliza os mesmos métodos da de edição, pois foi utilizado o mesmo componente. Porém existem algumas mudanças. Como não há informações prévias de usuário, os estados são carregados como uma string vazia, sendo alterados a medida que o usuário preenche os campos. A mensagem de confirmação é alterada para se realmente deseja adicionar um usuário e na confirmação é a chamada a função addUser para adicionar na API.
 		</details>
-
