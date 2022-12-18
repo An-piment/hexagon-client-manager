@@ -65,7 +65,7 @@ Neste repositório foi desenvolvido uma aplicação web onde é possível realiz
   <details>
     <summary>3.4. Página inicial</summary><br/>
 	
-	![image](https://user-images.githubusercontent.com/112974999/208306045-1f27e877-e6ef-452f-b863-5afb0ac8e5e9.png)
+![image](https://user-images.githubusercontent.com/112974999/208306045-1f27e877-e6ef-452f-b863-5afb0ac8e5e9.png)
 
     Ao iniciarmos a página, o React.js verificará qual o caminho da URL que o usuário se encontra. Como ele está na página principal, irá renderizar a página Home ('/'). Nesta página é chamada a função componentDidMouth() para fazer o carregamento da API através da função getUsers e salvar o resultado no estado users.<br/>
 		Para o filtro de busca, são renderizados 4 inputs com as informações nome, cpf, cidade e usuários por página, e, cada vez que o usuário altera alguns destes campos a função handleChange é chamada e atualiza o estado de cada um dos filtros. Com esta atualização, antes de ser renderizado os usuários, a função filterUsers é chamada, recebendo o array de usuários, e, caso um dos estados de filtro seja diferente de undefined (usuário escreveu algo), é realizado um array.filter para definir o novo array de usuários a ser mostrado.<br/>
