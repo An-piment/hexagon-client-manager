@@ -11,7 +11,7 @@ Neste repositório foi desenvolvido uma aplicação web onde é possível realiz
 
         
 <details>
-  <summary><strong>🤝 Depois de terminar o desenvolvimento (opcional)</strong></summary><br />
+  <summary>## Introdução</summary><br />
 
   Para sinalizar que o seu projeto está pronto para o _"Code Review"_, faça o seguinte:
 
