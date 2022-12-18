@@ -77,9 +77,7 @@ E no segundo terminal:
 
   <details>
     <summary>3.3. Paginação</summary><br/>
-A lógica de como é feita a paginação pode ser vista no arquivo src/functions/pagination.js. A principal função é a createPagination:
-
-- Recebe como parâmetros um array com os usuários, a quantidade de usuários a ser mostrado por página, a página atual da paginação em que o usuário se encontra e uma função que é adicionada no onClick de cada botão de paginação.<br/>
+A lógica de como é feita a paginação pode ser vista no arquivo src/functions/pagination.js. A principal função é a createPagination que recebe como parâmetros um array com os usuários, a quantidade de usuários a ser mostrado por página, a página atual da paginação em que o usuário se encontra e uma função que é adicionada no onClick de cada botão de paginação.<br/>
 
 Primeiro, a createPagination chama a função setMaxPages passando como parâmetros o array de usuários e usuários por página e retorna a quantidade de páginas que devem existir. Dividindo o tamanho do array pelo número de usuários por página e, com este resultado, fazendo um Math.ceil conseguimos este valor. Por exemplo: caso o número de usuários por página seja 5 e existam 6 usuários, o Math.ceil irá arredondar o valor para cima retornando 2 páginas.<br/>
 		Após termos este valor, a função createPagination irá verificar se serão exibidas mais de 3 páginas, pois, por padrão, a aplicação apenas mostra 3 páginas de paginação, por exemplo (1, 2, 3) ou (3, 4, 5). Caso o usuário esteja na primeira página e só exista uma página, será criado dinamicamente apenas um botão e, se por acaso esteja na primeira página e existam 20 páginas, serão criados 3 botões (1, 2, 3).<br/>
