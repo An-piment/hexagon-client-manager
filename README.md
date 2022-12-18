@@ -19,13 +19,13 @@ Neste repositório foi desenvolvido uma aplicação web onde é possível realiz
         
 <details>
   <summary>2.1. Organização dos arquivos</summary><br/>
-  Para facilitar a leitura e reaproveitamento de funções, o código possui uma pasta principal onde se encontram todos os arquivos Javascript chamada <strong>src</strong>. Dentro desta existem os seguintes diretórios:<br/>
+  Para facilitar a leitura e reaproveitamento de funções, o código possui uma pasta principal onde se encontram todos os arquivos Javascript chamada <strong>src</strong>. Dentro desta existem os seguintes diretórios:
 
   * <strong>functions</strong> - Dentro desta pasta, existem arquivos com funções usadas em todas as páginas da aplicação, ou seja, funções globais;
   * <strong>component</strong> - Dentro desta pasta, temos os componentes que irão ser renderizados em cada página da aplicação feita em React.js;
   * <strong>pages</strong> - Dentro desta pasta, temos as páginas da aplicação que renderizam os componentes dependendo do caminho que estamos (/edit, /home, etc)
   
-   Neste projeto você irá criar o TrybeTunes, uma aplicação capaz de reproduzir músicas das mais variadas bandas e artistas, criar uma lista de músicas favoritas e editar o perfil da pessoa usuária logada. Essa aplicação será capaz de:
+  Para facilitar a leitura e reaproveitamento de funções, o código possui uma pasta principal onde se encontram todos os arquivos Javascript chamada <strong>src</strong>. Dentro desta existem os seguintes diretórios:
 
   - Fazer login;
   - Pesquisar por uma banda ou artista;
