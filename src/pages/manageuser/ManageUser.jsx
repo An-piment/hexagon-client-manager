@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styles from './ManageUser.module.css'
-import { getUsers, updateUser, addUser } from '../../components/functions/userManager';
-import { alertMessage, formError} from '../../components/functions/alert';
+import { getUsers, updateUser, addUser } from '../../functions/userManager';
+import { alertMessage, formError} from '../../functions/alert';
 
 export default class ManageUser extends Component {
 	state = {

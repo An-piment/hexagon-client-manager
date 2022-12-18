@@ -3,8 +3,8 @@ import styles from './UserTable.module.css';
 import Delete from '../../images/delete.svg';
 import Edit from '../../images/edit.svg';
 import { Link } from 'react-router-dom';
-import { alertMessage } from '../functions/alert';
-import { deleteUser } from '../functions/userManager';
+import { alertMessage } from '../../functions/alert';
+import { deleteUser } from '../../functions/userManager';
 
 export default class UserTable extends Component {
   handleDelete = async (nome, id) => {

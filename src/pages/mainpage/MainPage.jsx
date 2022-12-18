@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import UserTable from '../../components/usertable/UserTable';
 import Search from '../../components/search/Search';
-import { getUsers } from '../../components/functions/userManager';
+import { getUsers } from '../../functions/userManager';
 import styles from './MainPage.module.css'
-import { showUsersOnPage, createPagination } from '../../components/functions/pagination';
+import { showUsersOnPage, createPagination } from '../../functions/pagination';
 
 
 export default class MainPage extends Component {
@@ -33,6 +33,7 @@ export default class MainPage extends Component {
 	handleChange = ({ target }) => {
 		const { name, value } = target;
 		this.setState({
+			currentPage: 1,
 			[name]: value,
 		});
 	};
