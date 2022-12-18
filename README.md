@@ -79,8 +79,6 @@ Neste repositório foi desenvolvido uma aplicação web onde é possível realiz
 		</details>
 
   <details>
-    <summary>3.5. Adição de usuários</summary><br/>
-			Ao clicar no botão editar de um usuário, a aplicação é redirecionada para a página ('/dit/id_do_usuario'). Nesta página temos todos os campos de informação já preenchidos através do componentDidMount() que chama a função de getUsers e find neste array para achar o usuário com o id necessário e alterar o estado da aplicação com as informações recebidas. Ao preencher qualquer input, a função handleChange é chamada, a qual altera o estado da aaplicação.<br/>
-			Caso a pessoa clique em Salvar, a função alertMessage irá ser chamada mostrando um aviso com as opções de prosseguir ou não. Caso prossiga, a função retorna 'success' e a função updateUser é chamada atualizando os dados e redirecionando a aplicação para a página home.<br/>
-			Caso a pessoa esqueça de preencher qualquer campo, a função formError é chamada exibindo uma mensagem de erro alertando que todos os campos precisam ser preenchidos.
+    <summary>3.6. Adição de usuários</summary><br/>
+			A página de adição utiliza os mesmos métodos da de edição, pois foi utilizado o mesmo componente. Porém existem algumas mudanças. Como não há informações prévias de usuário, os estados são carregados como uma string vazia, sendo alterados a medida que o usuário preenche os campos. A mensagem de confirmação é alterada para se realmente deseja adicionar um usuário e na confirmação é a chamada a função addUser para adicionar na API.
 		</details>		
