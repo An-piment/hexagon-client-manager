@@ -14,10 +14,7 @@ Neste repositório foi desenvolvido uma aplicação web onde é possível realiz
     [![Assistir o vídeo](https://w7.pngwing.com/pngs/467/458/png-transparent-video-player-play-together-angle-text-photography-thumbnail.png)]      (https://clipchamp.com/watch/WcTxfhf6NcR)        
 </details>
 
-## 2. Código e lógica
-
-<details>       
-  <summary>2.1. Ferramentas e estrutura</summary><br/>
+## 2. Estrutura e ferramentas
   
   <details>
     <summary>2.1.1. Organização dos arquivos</summary><br/>
@@ -39,5 +36,4 @@ Neste repositório foi desenvolvido uma aplicação web onde é possível realiz
     <summary>2.1.3. Organiza</summary><br/>
     A aplicação possui duas páginas principais, Main, página principal onde é mostrada ao usuário as informações dos clientes recuperados da API e a página de gerenciamento de usuários, podendo ser tanto para edição ou adição, dependendo do tipo de parâmetro que irá receber.
   </details>
-</details>
 
