@@ -7,12 +7,8 @@ Neste repositório foi desenvolvido uma aplicação web onde é possível realiz
 * Vídeo demonstrativo do funcionamento da aplicação;
 * Explicação do código e da lógica envolvida;
 
-<div style="position:relative;width:fit-content;height:fit-content;">
-            <a style="position:absolute;top:20px;right:1rem;opacity:0.8;" href="https://clipchamp.com/watch/WcTxfhf6NcR?utm_source=embed&utm_medium=embed&utm_campaign=watch">
-                <img style="height:22px;" src="https://clipchamp.com/e.svg" alt="Made with Clipchamp" />
-            </a>
-            <iframe allowfullscreen style="border:none" src="https://clipchamp.com/watch/WcTxfhf6NcR/embed" width="640" height="360"></iframe>
-        </div>
+[![Watch the video](https://img.youtube.com/vi/T-D1KVIuvjA/maxresdefault.jpg)](https://youtu.be/T-D1KVIuvjA)
+
         
 <details>
   <summary><strong>🤝 Depois de terminar o desenvolvimento (opcional)</strong></summary><br />
