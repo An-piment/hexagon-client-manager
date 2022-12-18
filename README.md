@@ -64,9 +64,6 @@ Neste repositório foi desenvolvido uma aplicação web onde é possível realiz
 
   <details>
     <summary>3.4. Página inicial</summary><br/>
-	
-![image](https://user-images.githubusercontent.com/112974999/208306045-1f27e877-e6ef-452f-b863-5afb0ac8e5e9.png)
-
     Ao iniciarmos a página, o React.js verificará qual o caminho da URL que o usuário se encontra. Como ele está na página principal, irá renderizar a página Home ('/'). Nesta página é chamada a função componentDidMouth() para fazer o carregamento da API através da função getUsers e salvar o resultado no estado users.<br/>
 		Para o filtro de busca, são renderizados 4 inputs com as informações nome, cpf, cidade e usuários por página, e, cada vez que o usuário altera alguns destes campos a função handleChange é chamada e atualiza o estado de cada um dos filtros. Com esta atualização, antes de ser renderizado os usuários, a função filterUsers é chamada, recebendo o array de usuários, e, caso um dos estados de filtro seja diferente de undefined (usuário escreveu algo), é realizado um array.filter para definir o novo array de usuários a ser mostrado.<br/>
 		Após este filtro, o componente UserTable é renderizado, recebendo como props o array de usuários. Este componente renderiza uma lista dinamicamente, dependendo de quantos usuários foram passados. A lista possui as informações de cada usuário e dois botões, Excluir e Editar. O botão excluir recebe a função onClick handleDelete que exibe um mensagem se realmente deseja remover o usuário com as opções sim e cancel, caso confirme a função deleteUser é chamada e o usuário é deletado. O botão edit transfere a página para o link ('/edit/id_do_usuário') para realizar as modificações.<br/>
@@ -84,4 +81,4 @@ Neste repositório foi desenvolvido uma aplicação web onde é possível realiz
   <details>
     <summary>3.6. Adição de usuários</summary><br/>
 			A página de adição utiliza os mesmos métodos da de edição, pois foi utilizado o mesmo componente. Porém existem algumas mudanças. Como não há informações prévias de usuário, os estados são carregados como uma string vazia, sendo alterados a medida que o usuário preenche os campos. A mensagem de confirmação é alterada para se realmente deseja adicionar um usuário e na confirmação é a chamada a função addUser para adicionar na API.
-		</details>		
+		</details>
