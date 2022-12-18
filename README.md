@@ -71,8 +71,8 @@ E no segundo terminal:
 
   <details>
     <summary>3.2. Funções de alerta</summary><br/>
-		Para ajudar visualmente o usuário da aplicação, existem dois tipos de função que irão mostrar na tela uma mensagem que se encontram em src/functions/alert.js. A alertMessage(message, action) recebe uma mensagem para mostrar ao usuário e uma action, deletar, adicionar, atualizar. Este alerta também mostra duas opções de confirmar ou cancelar. Caso o usuário confirme é retornada a mensagem de 'success', caso contrário, 'cancel'.<br/>
-		A segunda função é a formError() usado para exibir uma mensagem de erro caso o usuário esqueça de preencher algum campo quando estiver adicionando ou editando um usuário.
+		Para ajudar visualmente o usuário da aplicação, existem dois tipos de função que irão mostrar na tela uma mensagem que se encontram em src/functions/alert.js. A alertMessage(message, action) recebe uma mensagem para mostrar ao usuário e uma action, deletar, adicionar, atualizar. Este alerta também mostra duas opções de confirmar ou cancelar. Caso o usuário confirme, é retornada a mensagem de 'success', caso contrário, 'cancel'.<br/>
+		A segunda função é a formError() usada para exibir uma mensagem de erro caso o usuário esqueça de preencher algum campo quando estiver adicionando ou editando um usuário.
   </details>
 
   <details>
