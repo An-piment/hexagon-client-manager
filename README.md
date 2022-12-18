@@ -17,7 +17,7 @@ Neste repositório foi desenvolvido uma aplicação web onde é possível realiz
 ## 2. Código e lógica
 
 <details>       
-  <summary>2.1. Ferramentas e organiza</summary><br/>
+  <summary>2.1. Ferramentas e estrutura</summary><br/>
   <details>
     <summary>2.1.1. Organização dos arquivos</summary><br/>
 
