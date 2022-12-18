@@ -5,6 +5,7 @@
 Neste repositório foi desenvolvido uma aplicação web onde é possível realizar a edição ou o cadastro de novos usuários através do uso de ApiRest. Para melhor explicação de como foi concebido a concepção do código, este relatório será divido dois principais tópicos:
 
 * Vídeo demonstrativo do funcionamento da aplicação;
+* Breve descrição das ferramentas e da concepção da aplicação;
 * Explicação do código e da lógica envolvida;
 
 ## 1. Video
@@ -36,3 +37,17 @@ Neste repositório foi desenvolvido uma aplicação web onde é possível realiz
   Para realizar as requisições à API, foi optado o uso do Axios. Com ele é possível realizar a atualização de usuário da API, a remoção e a adição através dos comandos GET, DELETE, PUT e POST. Por fim, para o envio de avisos foi utilizado o SweetAlert2. Com ele é possível criar janelas de confirmação, erros já pré definidas, podendo alterar a mensagem, as opções e o que será feito após seu aviso.
   </details>
 
+## 3. Código e lógica
+
+  <details>
+    <summary>3.1. Funções de dados do usuário</summary><br/>
+    De modo a melhorar o uso das funções de recuperar dados de usuários, todas as funções relativas a esta funcionalidade estão no diretório src/functions/userManager.js.
+		Neste arquivos podemos editar a URL de origem da API para que a ferramenta Axios possa trabalhar com os dados. Se quisermos ler os usuários da API, usamos a função getUsers() que chama a função Axios.get e retorna um Array de Objetos com todos os dados dos clientes (nome, email, etc). 
+		Para deletarmos um usuários utilizamos a função deleteUser(id). Passando o id do usuário o Axios irá executar a função Axios.delete e remover o usuário da API.
+		Para atualizar um cliente, usamos a função updateUser(id, data), onde id é o id do cliente que queremos atualizar e data as informações que queremos atualizar, onde esta se encontra em forma de objeto
+  </details>
+
+  <details>
+    <summary>3.1. Página inicial</summary><br/>
+    Ao iniciarmos a página, o React.js verificará qual o caminho da URL que o usuário se encontra. Como ele está na página principal, irá renderizar a página Home ('/'). Nesta página é chamada a função componentDidMouth() para fazer o carregamento da API através do axios e do link da aplicação (no nosso caso, http://localhost:3000/users/). A função responsável por este carregamento se encontra na pasta functions/userManager
+  </details>
