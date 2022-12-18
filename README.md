@@ -18,15 +18,11 @@ Neste repositório foi desenvolvido uma aplicação web onde é possível realiz
   
   <details>
     <summary>2.1. Organização dos arquivos</summary><br/>
-  Neste repositório foi desenvolvido uma aplicação web onde é possível realizar a edição ou o cadastro de novos usuários através do uso de ApiRest. Para melhor explicação de como foi concebido a concepção do código, este relatório será divido dois principais tópicos:
-
-* Vídeo demonstrativo do funcionamento da aplicação;
-* Explicação do código e da lógica envolvida;
     Para facilitar a leitura e reaproveitamento de funções, o código possui uma pasta principal onde se encontram todos os arquivos Javascript chamada <strong>src</strong>. Dentro desta existem os seguintes diretórios:
   
-    * functions - Dentro desta pasta, existem arquivos com funções usadas em todas as páginas da aplicação, ou seja, funções globais;
-    * component - Dentro desta pasta, temos os componentes que irão ser renderizados em cada página da aplicação feita em React.js;
-    * pages - Dentro desta pasta, temos as páginas da aplicação que renderizam os componentes dependendo do caminho que estamos (/edit, /home, etc)
+* functions - Dentro desta pasta, existem arquivos com funções usadas em todas as páginas da aplicação, ou seja, funções globais;
+* component - Dentro desta pasta, temos os componentes que irão ser renderizados em cada página da aplicação feita em React.js;
+* pages - Dentro desta pasta, temos as páginas da aplicação que renderizam os componentes dependendo do caminho que estamos (/edit, /home, etc)
   </details>
   
   <details>
