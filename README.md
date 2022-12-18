@@ -30,8 +30,9 @@ Neste repositório foi desenvolvido uma aplicação web onde é possível realiz
 
   </details>
 
+  
   <details>
-    <summary>2.1,2. Páginas</summary><br/>
+    <summary>2.1.2. Páginas</summary><br/>
     A aplicação possui duas páginas principais, Main, página principal onde é mostrada ao usuário as informações dos clientes recuperados da API e a página de gerenciamento de usuários, podendo ser tanto para edição ou adição, dependendo do tipo de parâmetro que irá receber.
   </details>
 
