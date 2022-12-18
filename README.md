@@ -7,7 +7,7 @@ Neste repositório foi desenvolvido uma aplicação web onde é possível realiz
 * Vídeo demonstrativo do funcionamento da aplicação;
 * Explicação do código e da lógica envolvida;
 
-[![Watch the video](https://img.youtube.com/vi/T-D1KVIuvjA/maxresdefault.jpg)](https://youtu.be/T-D1KVIuvjA)
+[![Watch the video](https://img.youtube.com/vi/T-D1KVIuvjA/maxresdefault.jpg)](https://clipchamp.com/watch/WcTxfhf6NcR)
 
         
 <details>
