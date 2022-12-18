@@ -12,7 +12,7 @@ Neste repositório foi desenvolvido uma aplicação web onde é possível realiz
 
 <details>
   <summary>1.1. Vídeo demonstrativo</summary><br />
-    [![Assistir o vídeo](https://w7.pngwing.com/pngs/467/458/png-transparent-video-player-play-together-angle-text-photography-thumbnail.png)]      (https://clipchamp.com/watch/WcTxfhf6NcR)        
+    [Assistir o vídeo] (https://clipchamp.com/watch/WcTxfhf6NcR)        
 </details>
 
 ## 2. Estrutura e ferramentas
