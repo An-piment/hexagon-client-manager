@@ -69,8 +69,7 @@ Neste repositório foi desenvolvido uma aplicação web onde é possível realiz
 		Após este filtro, o componente UserTable é renderizado, recebendo como props o array de usuários. Este componente renderiza uma lista dinamicamente, dependendo de quantos usuários foram passados. A lista possui as informações de cada usuário e dois botões, Excluir e Editar. O botão excluir recebe a função onClick handleDelete que exibe um mensagem se realmente deseja remover o usuário com as opções sim e cancel, caso confirme a função deleteUser é chamada e o usuário é deletado. O botão edit transfere a página para o link ('/edit/id_do_usuário') para realizar as modificações.<br/>
 		O botão adicionar que se encontra no canto superior direito da tabela, redireciona a pessoa para o link ('/add') onde é possível adicionar novos usuários.
 		Por último, a paginação é renderizada abaixo da lista (sua explicação pode ser vista no item 3.3)<br/>
-	![image](https://user-images.githubusercontent.com/112974999/208306309-aff43631-893d-4b39-9b40-1cf7b009371b.png)
-
+	![image](https://user-images.githubusercontent.com/112974999/208306309-aff43631-893d-4b39-9b40-1cf7b009371b.png)<br/>
 		</details>
 
   <details>
