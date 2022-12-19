@@ -4,7 +4,7 @@
 
 ## Introdução
 
-Neste repositório foi desenvolvido uma aplicação web onde é possível realizar a edição ou o cadastro de novos usuários através do uso de ApiRest. Para melhor explicação de como foi concebido a concepção do código, este relatório será divido três principais tópicos:
+Neste repositório foi desenvolvido uma aplicação web onde é possível realizar a edição ou o cadastro de novos usuários através do uso de ApiRest. Para melhor explicação de como foi elaborado o código, este relatório será divido três tópicos:
 
 * Vídeo demonstrativo do funcionamento da aplicação;
 * Breve descrição das ferramentas e da concepção da aplicação;
@@ -44,28 +44,28 @@ E no segundo terminal:
   
 * <strong>functions</strong> - Dentro desta pasta existem arquivos com as funções usadas em todas as páginas da aplicação, ou seja, funções globais;
 * <strong>component</strong> - Dentro desta pasta temos os componentes que serão renderizados em cada página da aplicação feita em React.js;
-* <strong>pages</strong> - Dentro desta pasta temos as páginas da aplicação que renderizam os componentes dependendo do caminho que estamos (/edit, /home, etc)
+* <strong>pages</strong> - Dentro desta pasta temos as páginas da aplicação que renderizam os componentes dependendo da URL que estamos (/edit, /home, etc)
   </details>
   
   <details>
     <summary>2.2. Páginas</summary><br/>
-    A aplicação possui duas páginas principais, Main, página principal onde é mostrada ao usuário as informações dos clientes recuperados da API e a página de gerenciamento de usuários, podendo ser tanto para edição ou adição, dependendo do tipo de parâmetro que irá receber.
+    A aplicação possui duas páginas principais. A primeira é aquela que mostra ao usuário as informações dos clientes recuperadas da API. A segunda é a página de gerenciamento de usuários, que pode ser tanto usada para edição como adição, dependendo do tipo de parâmetro que irá receber.
   </details>
 
   <details>
     <summary>2.3. Ferramentas e frameworks</summary><br/>
-    O framework Bootstrap foi usado para realizar a estilização de todos os botões (confirmação, deletar, etc), campos de input (texto e select) e para a paginação. Para a criação de um site que terá a API contendo os usuários foi necessário o uso da ferramenta json server. Criando a pasta <strong>db</strong> no diretório principal da aplicação, e, dentro dela, o arquivo db.json, podemos inicializar uma API vazia ou não. No caso desta aplicação, já foi pré criado alguns usuários para facilitar alguns testes.<br/>
-  Para realizar as requisições à API foi optado o uso do Axios. Com ele é possível realizar a atualização de usuário da API, a remoção e a adição através dos comandos GET, DELETE, PUT e POST. Por fim, para o envio de avisos foi utilizado o SweetAlert2. Com ele é possível criar janelas de confirmação, erros já pré definidas, podendo alterar a mensagem, as opções e o que será feito após seu aviso.
+    O framework Bootstrap foi usado para realizar a estilização de todos os botões (confirmação, deletar, etc), campos de input (texto e select) e para a paginação. Para a criação do site que terá a API contendo os usuários foi necessário o uso da ferramenta json server. Criando a pasta <strong>db</strong> no diretório principal da aplicação e, dentro dela, o arquivo db.json, podemos inicializar uma API vazia ou não. No caso desta aplicação, já foram criados alguns usuários dummys para facilitar os testes.<br/>
+  Para realizar as requisições à API optou-se pelo uso da ferramenta Axios. Com ele é possível realizar a atualização, remoção e a adição de usuários na API através dos comandos GET, DELETE, PUT e POST. Por fim, para o envio de avisos foi utilizado o SweetAlert2. Com ele é possível criar janelas de confirmação e erros customizaveis, podendo alterar a mensagem, as opções e o que será feito após seu aviso.
   </details>
 
 ## 3. Código e lógica
 
   <details>
     <summary>3.1. Funções de dados do usuário</summary><br/>
-    De modo a melhorar o uso das funções de recuperar dados de usuários, todas as funções relativas a esta funcionalidade estão no diretório src/functions/userManager.js.
+    Com o objetivo de melhorar o uso das funções de recuperação de dados de usuários, todas as funções relativas a esta funcionalidade estão no diretório src/functions/userManager.js.
 		Neste arquivo podemos editar a URL de origem da API para que a ferramenta Axios possa trabalhar com os dados. Se quisermos ler os usuários da API, usamos a função getUsers() que chama a função Axios.get e retorna um Array de Objetos com todos os dados dos clientes (nome, email, etc).<br/> 
-		Para deletarmos um usuários utilizamos a função deleteUser(id). Passando o id do usuário o Axios irá executar a função Axios.delete e remover o usuário da API.<br/>
-		Para atualizar um cliente, usamos a função updateUser(id, data), onde id é o id do cliente que queremos atualizar e data as informações que queremos atualizar, onde esta se encontra em forma de objeto.<br/>
+		Para deletarmos um usuário, utilizamos a função deleteUser(id). Passando o id do usuário como parâmetro, o Axios irá executar a função Axios.delete e remover o usuário da API.<br/>
+		Para atualizar um cliente, usamos a função updateUser(id, data), na qual o parâmetro id é o id do cliente que queremos atualizar. O parâmetro data são as informações que queremos atualizar que se encontra no formato de objeto.<br/>
 		Por último, temos a função addUser(data) que recebe um objeto com as informações do usuário a ser adicionado e chama a função Axios.post para adicioná-lo na API.
   </details>
 
